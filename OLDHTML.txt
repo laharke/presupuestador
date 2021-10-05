@@ -66,15 +66,15 @@
                 <td>$0</td>
               </tr>
               <tr>
-                <th scope="row"><input id="valorMensualCant1" type="text" placeholder="Cantidad"></th>
+                <th scope="row"><input id="valorMensualCant" type="text" placeholder="Cantidad"></th>
                 <td>Valor Mensual Modelo One</td>
-                <td id="valorMensualPrice1">$800</td>
-                <td id="valorMensualTotal1">$0</td>
+                <td id="valorMensualPrice">800</td>
+                <td id="valorMensualTotal">$0</td>
               </tr>
               <tr>
                 <th scope="row"><input id="valorMensualCant2" type="text" placeholder="Cantidad"></th>
                 <td>Valor Mensual Modelo Light</td>
-                <td id="valorMensualPrice2">$900</td>
+                <td id="valorMensualPrice2">900</td>
                 <td id="valorMensualTotal2">$0</td>
               </tr>
               <tr>
@@ -84,46 +84,46 @@
                 <td>$0</td>
               </tr>
               <tr>
-                <th scope="row"><input class="valorMensualCant" type="text" placeholder="Cantidad"></th>
+                <th scope="row"><input id="valorMensualCant3" type="text" placeholder="Cantidad"></th>
                 <td>Buzzer (Parlante)</td>
-                <td class="valorMensualPrice">$500</td>
-                <td class="valorMensualTotal">$0</td>
+                <td id="valorMensualPrice3">$500</td>
+                <td id="valorMensualTotal3">$0</td>
               </tr>
               <tr>
-                <th scope="row"><input class="valorMensualCant" type="text" placeholder="Cantidad"></th>
+                <th scope="row"><input id="valorMensualCant4" type="text" placeholder="Cantidad"></th>
                 <td>Identificador de chofer magnetico</td>
-                <td class="valorMensualPrice">$1000</td>
-                <td class="valorMensualTotal">$0</td>
+                <td id="valorMensualPrice4">$1000</td>
+                <td id="valorMensualTotal4">$0</td>
               </tr>
               <tr>
-                <th scope="row"><input class="valorMensualCant" type="text" placeholder="Cantidad"></th>
+                <th scope="row"><input id="valorMensualCant5" type="text" placeholder="Cantidad"></th>
                 <td>Llave chofer (Cospel)</td>
-                <td class="valorMensualPrice">$400</td>
-                <td class="valorMensualTotal">$0</td>
+                <td id="valorMensualPrice5">$400</td>
+                <td id="valorMensualTotal5">$0</td>
               </tr>
               <tr>
-                <th scope="row"><input class="valorMensualCant" type="text" placeholder="Cantidad"></th>
+                <th scope="row"><input id="valorMensualCant6" type="text" placeholder="Cantidad"></th>
                 <td>Apertura puerta exterior</td>
-                <td class="valorMensualPrice">$1500</td>
-                <td class="valorMensualTotal">$0</td>
+                <td id="valorMensualPrice6">$1500</td>
+                <td id="valorMensualTotal6">$0</td>
               </tr>
               <tr>
-                <th scope="row"><input class="valorMensualCant" type="text" placeholder="Cantidad"></th>
+                <th scope="row"><input id="valorMensualCant7" type="text" placeholder="Cantidad"></th>
                 <td>Sensor de temperatura</td>
-                <td class="valorMensualPrice">$1500</td>
-                <td class="valorMensualTotal">$0</td>
+                <td id="valorMensualPrice7">$1500</td>
+                <td id="valorMensualTotal7">$0</td>
               </tr>
               <tr>
-                <th scope="row"><input class="valorMensualCant" type="text" placeholder="Cantidad"></th>
+                <th scope="row"><input id="valorMensualCant8" type="text" placeholder="Cantidad"></th>
                 <td>Seguro (reembolsable)</td>
-                <td class="valorMensualPrice">$5000</td>
-                <td class="valorMensualTotal">$0</td>
+                <td id="valorMensualPrice8">$5000</td>
+                <td id="valorMensualTotal8">$0</td>
               </tr>
               <tr>
-                <th scope="row"><input class="valorMensualCant" type="text" placeholder="Cantidad"></th>
+                <th scope="row"><input id="valorMensualCant9" type="text" placeholder="Cantidad"></th>
                 <td>Botón de pánico</td>
-                <td class="valorMensualPrice">$450</td>
-                <td class="valorMensualTotal">$0</td>
+                <td id="valorMensualPrice9">$450</td>
+                <td id="valorMensualTotal9">$0</td>
               </tr>
               <tr class="table-primary">
                 <th scope="row"></th>
