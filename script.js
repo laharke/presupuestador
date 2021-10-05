@@ -1,39 +1,52 @@
-//VALOR MENSUAL MODELO ONE
-const valorMensualCantRef1 = document.querySelector("#valorMensualCant1");
-const valorMensualCant1 = document.querySelector("#valorMensualCant1").value;
-let valorMensualPrice1 = document.querySelector("#valorMensualPrice1").innerHTML;
-valorMensualPrice1 = valorMensualPrice1.substring(1);
-const valorMensualTotal1 = document.querySelector("#valorMensualTotal1");
-let newValorMensualTotal1 = 0;
+//VALOR MENSUAL LIGHT Y ONE
+const cantidadLightOneRef = document.querySelectorAll(".cantidadLightOne");
+const priceLightOneRef = document.querySelectorAll(".precioMensualLightOne");
+const totalLightOneRef = document.querySelectorAll(".precioTotalLightOne");
+console.log(cantidadLightOneRef, priceLightOneRef, totalLightOneRef);
 
-valorMensualCantRef1.addEventListener('input', () => {
-    newValorMensualTotal1 = valorMensualCantRef1.value * valorMensualPrice1;
-    if (newValorMensualTotal1 == "1600" || newValorMensualTotal1 == "800"){
-        valorMensualTotal1.innerHTML = "$" + 2400;
-    }
-    else{
-    valorMensualTotal1.innerHTML = "$" + newValorMensualTotal1;
-    }
-});
+for (let i = 0; i < 2; i++){
+    let cantidadTotal = 0;
+    cantidadLightOneRef[i].addEventListener('input', () => {
+        cantidadTotal = Number(cantidadLightOneRef[0].value) + Number(cantidadLightOneRef[1].value);
+        let valorMensual = priceLightOneRef[i].innerHTML;
+        valorMensual = valorMensual.substring(1);
+        let valorTotal = 0;
+        if (cantidadTotal == "2"){
+            totalLightOneRef[0].innerHTML = "$" + 1200;
+            totalLightOneRef[1].innerHTML = "$" + 1500;
+        }
+        else if (cantidadTotal == "0"){
+            totalLightOneRef[0].innerHTML = "$" + 0;
+            totalLightOneRef[1].innerHTML = "$" + 0;
+        }
+        else if (cantidadTotal == "1"){
+            if (cantidadLightOneRef[0].value == "1"){
+                let newPrecio = priceLightOneRef[0].innerHTML.substring(1);
+                valorTotal = 3 * newPrecio;
+                totalLightOneRef[0].innerHTML = "$" + valorTotal;
+                totalLightOneRef[1].innerHTML = "$" + 0;
+            }
+            else if (cantidadLightOneRef[1].value == "1"){
+                let newPrecio = priceLightOneRef[1].innerHTML.substring(1);
+                valorTotal = 3 * newPrecio;
+                totalLightOneRef[1].innerHTML = "$" + valorTotal;
+                totalLightOneRef[0].innerHTML = "$" + 0;
+            }
+        }
+        else{
+            let valorTotalOne = cantidadLightOneRef[0].value * priceLightOneRef[0].innerHTML.substring(1);
+            totalLightOneRef[0].innerHTML = "$" + valorTotalOne;
+
+            let valorTotalLight = cantidadLightOneRef[1].value * priceLightOneRef[1].innerHTML.substring(1);
+            totalLightOneRef[1].innerHTML = "$" + valorTotalLight;
+
+        }
+    });
+
+};
 
 
-//VALOR MENSUAL MODELO LIGHT
-const valorMensualCantRef2 = document.querySelector("#valorMensualCant2");
-const valorMensualCant2 = document.querySelector("#valorMensualCant2").value;
-let valorMensualPrice2 = document.querySelector("#valorMensualPrice2").innerHTML;
-valorMensualPrice2 = valorMensualPrice2.substring(1);
-const valorMensualTotal2 = document.querySelector("#valorMensualTotal2");
-let newValorMensualTotal2 = 0;
 
-valorMensualCantRef2.addEventListener('input', () => {
-    newValorMensualTotal2 = valorMensualCantRef2.value * valorMensualPrice2;
-    if (newValorMensualTotal2 == "900" || newValorMensualTotal2 == "1800"){
-        valorMensualTotal2.innerHTML = "$" + 2700;
-    }
-    else {
-    valorMensualTotal2.innerHTML = "$" + newValorMensualTotal2;
-    }
-});
 
 //METO EN UNA LISTA LA REFERENCIA A TODOS LOS PRECIOS, CANTIDADES Y TOTALES QUE FALTAN ,CADA UNO VA A CORRESPONDER CON SU INDICE
 const cantidadRefs = document.querySelectorAll(".valorMensualCant");
@@ -44,10 +57,10 @@ for (let i = 0; i < 7; i++){
     
     cantidadRefs[i].addEventListener('input', () => {
         let cantidad = cantidadRefs[i].value;
-        let valorMensual = priceRefs[i].innerHTML;
-        valorMensual = valorMensual.substring(1);
+        let valorMensual2 = priceRefs[i].innerHTML;
+        valorMensual2 = valorMensual2.substring(1);
         let newValorMensual = 0;
-        newValorMensual = cantidad * valorMensual;
+        newValorMensual = cantidad * valorMensual2;
         priceTotal[i].innerHTML = "$" + newValorMensual;
     });
 };
