@@ -12,8 +12,20 @@ for (let i = 0; i < 2; i++){
         valorMensual = valorMensual.substring(1);
         let valorTotal = 0;
         if (cantidadTotal == "2"){
-            totalLightOneRef[0].innerHTML = "$" + 1200;
-            totalLightOneRef[1].innerHTML = "$" + 1500;
+            if (cantidadLightOneRef[0].value == "2"){
+                valorTotal = 2100;
+                totalLightOneRef[0].innerHTML = "$" + valorTotal;
+                totalLightOneRef[1].innerHTML = "$" + 0;
+            }
+            else if (cantidadLightOneRef[1].value == "2"){
+                valorTotal = 2100;
+                totalLightOneRef[1].innerHTML = "$" + valorTotal;
+                totalLightOneRef[0].innerHTML = "$" + 0;
+            }
+            else {
+            totalLightOneRef[0].innerHTML = "$" + 1000;
+            totalLightOneRef[1].innerHTML = "$" + 1100;
+            }
         }
         else if (cantidadTotal == "0"){
             totalLightOneRef[0].innerHTML = "$" + 0;
@@ -21,14 +33,12 @@ for (let i = 0; i < 2; i++){
         }
         else if (cantidadTotal == "1"){
             if (cantidadLightOneRef[0].value == "1"){
-                let newPrecio = priceLightOneRef[0].innerHTML.substring(1);
-                valorTotal = 3 * newPrecio;
+                valorTotal = 1800;
                 totalLightOneRef[0].innerHTML = "$" + valorTotal;
                 totalLightOneRef[1].innerHTML = "$" + 0;
             }
             else if (cantidadLightOneRef[1].value == "1"){
-                let newPrecio = priceLightOneRef[1].innerHTML.substring(1);
-                valorTotal = 3 * newPrecio;
+                valorTotal = 1800;
                 totalLightOneRef[1].innerHTML = "$" + valorTotal;
                 totalLightOneRef[0].innerHTML = "$" + 0;
             }
