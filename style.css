@@ -1,0 +1,27 @@
+.navEnd {
+    justify-content: end;
+}
+
+.showcase {
+    background: black url(imgs/TRUETRUCK.jpg);
+    padding: 100px;
+    margin-top: 10px;
+}
+
+.showcaseText{
+    margin-left: 100px;
+}
+
+.imgLogo {
+    width: 20%;
+    height: 20%;
+    background: transparent;
+}
+
+.table {
+    width: 70%;
+}
+.tableContainer {
+    display: flex;
+    justify-content: center;
+}
