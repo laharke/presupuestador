@@ -74,3 +74,35 @@ for (let i = 0; i < 7; i++){
         priceTotal[i].innerHTML = "$" + newValorMensual;
     });
 };
+
+// FUNCION DE IMPRIMIR
+const printButtonRef = document.querySelector("#printButton");
+printButtonRef.addEventListener('click', () => {
+    window.print();
+});
+
+//SUMAR TOTATLES
+//DEBO AGARRAR LAS REFERENCIAS A LO QUE SUMA A COSTO UNICO Y COSTO MENSUAL Y SUMARLO, 
+//LO QUE PUEDO HACER ES UNA MEGA NODELIST DE TODOOOOS LAS REFERNCIAS, INCLUIDO LIGHT Y ONE, ESTO ES PONIENDO UAN CLASE NUEVA
+//Y DESPUES SUMO LAS QUE ME PINTE
+
+//preciototal es UNICO PAGO
+const nodeListTotal = document.querySelectorAll(".precioTotal");
+const totalPagoUnicoRef = document.querySelector("#pagoUnicoId")
+
+for (let i = 0; i < 7; i++){
+    let pagoUnico = 0;
+    cantidadRefs[i].addEventListener('input', () => {
+        let precioSumar1 = Number(nodeListTotal[0].innerHTML.substring(1));
+        let precioSumar2 = Number(nodeListTotal[1].innerHTML.substring(1));        
+        let precioSumar3 = Number(nodeListTotal[2].innerHTML.substring(1));        
+        let precioSumar4 = Number(nodeListTotal[3].innerHTML.substring(1));        
+        let precioSumar5 = Number(nodeListTotal[4].innerHTML.substring(1));        
+        let precioSumar6 = Number(nodeListTotal[5].innerHTML.substring(1));
+        let precioSumar7 = Number(nodeListTotal[6].innerHTML.substring(1));
+        pagoUnico = precioSumar1 + precioSumar2 + precioSumar3 + precioSumar4 + precioSumar5 +precioSumar6 + precioSumar7;
+        console.log(pagoUnico)
+        totalPagoUnicoRef.innerHTML = "$" + pagoUnico;
+        
+    });
+};
