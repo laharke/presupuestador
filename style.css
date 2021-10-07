@@ -24,10 +24,25 @@
 .tableContainer {
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .printButtonDiv {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
+}
+
+.cantBonif{
+    display: flex;
+    justify-content: center;
+}
+
+input[type='number']{
+    width: 140px;
+} 
+
+.centerInput{
+    display: flex;
+    justify-content: center;
 }
