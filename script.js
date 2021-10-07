@@ -106,3 +106,30 @@ for (let i = 0; i < 7; i++){
         
     });
 };
+
+//sumar total del costo mensual
+
+const pagoMensualRef = document.querySelector("#pagoMensualId");
+for (let i = 0; i < 2; i++){
+    let pagoMensual = 0;
+    cantidadLightOneRef[i].addEventListener('input', () => {
+        let sumarPrecio1 = Number(totalLightOneRef[0].innerHTML.substring(1));
+        let sumarPrecio2 = Number(totalLightOneRef[1].innerHTML.substring(1));
+        pagoMensual = sumarPrecio1 + sumarPrecio2;
+        pagoMensualRef.innerHTML = "$" + pagoMensual;
+    })
+};
+
+//ir modificnado el HTML del total de equipamento, instlacion y bonifaciones que siempre es igual a la suma de light y ones
+const bonificadoRef = document.querySelectorAll(".cantBonif");
+let cantidadGps = 0;
+for (let i = 0; i < 2; i++) {
+
+    cantidadLightOneRef[i].addEventListener('input', () => {
+        cantidadGps = Number(cantidadLightOneRef[0].value) + Number(cantidadLightOneRef[1].value)
+        bonificadoRef[0].innerHTML = cantidadGps;
+        bonificadoRef[1].innerHTML = cantidadGps;
+        bonificadoRef[2].innerHTML = cantidadGps;
+        console.log(cantidadGps);
+    });
+}
