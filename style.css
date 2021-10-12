@@ -46,3 +46,7 @@ input[type='number']{
     display: flex;
     justify-content: center;
 }
+
+.btn-primary{
+    font-size: 14px;
+}

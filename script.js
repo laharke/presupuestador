@@ -133,3 +133,9 @@ for (let i = 0; i < 2; i++) {
         console.log(cantidadGps);
     });
 }
+
+//hacer andar los botones popover
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+});
