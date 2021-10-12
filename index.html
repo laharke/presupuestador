@@ -15,17 +15,17 @@
     <!--nav bar--> 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="imgLogo" src="/imgs/LOGO.JPG" alt=""></a>
+          <a class="navbar-brand"><img href="#" class="imgLogo" src="/imgs/LOGO.JPG" alt="Global GPS LOGO"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse navEnd" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Presupuesto</a>
+                <a class="nav-link" href="presupuesto.html">Presupuesto</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="http://gps.nixel.com.ar/index.php?au=44F1D760E2D7C318C736081F27B06CDF" target="_blank_">Probar demo</a>
@@ -42,113 +42,35 @@
         </div>
       </div>
 
-      <!--Actual presupuestador-->
-      <div  class="container-fluid tableContainer">
-        <table id="tableToPrint" class="table table-bordered">
-            <thead>
-              <tr>
-                <th scope="col">Cantidad</th>
-                <th scope="col">Descripción</th>
-                <th scope="col">Precio Unitario</th>
-                <th scope="col">Precio Total</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="cantBonif">0</th>
-                <td>Equipamento sin costo (Comodato) <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Equipamento sin costo" data-bs-content="El equipamento es otorgado en comodato, es decir, se devuelven al finalizar la relación comercial">Descripción</button></td>
-                <td>$0</td>
-                <td>$0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="cantBonif">0</th>
-                <td>Instalación (Bahía Bca Oficinas) <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Instalación" data-bs-content="Las intalaciones en nuestra oficina son bonificadas">Descripción</button></td>
-                <td>$0</td>
-                <td>$0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="centerInput"><input class="cantidadLightOne" type="number" placeholder="Cantidad"></th>
-                <td>Valor Mensual Modelo One <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Modelo One" data-bs-content="El modelo one es bla bla bla, hypervinculo a saber mas para funciones">Descripción</button></td>
-                <td class="precioMensualLightOne">$800</td>
-                <td class="precioTotalLightOne">$0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="centerInput"><input class="cantidadLightOne" type="number" placeholder="Cantidad"></th>
-                <td>Valor Mensual Modelo Light <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Modelo Light" data-bs-content="El modelo light permite esto esto y esto en diferencia del one, click para saber más">Descripción</button></td>
-                <td class="precioMensualLightOne">$900</td>
-                <td class="precioTotalLightOne">$0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="cantBonif">0</th>
-                <td>Bonifiación hasta día 1 mes siguiente <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Bonifiación hasta el mes siguiente" data-bs-content="Bonificamos el valor mensual para que empieces a pagar al próximo mes">Descripción</button></td>
-                <td>$0</td>
-                <td>$0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="centerInput"><input class="valorMensualCant" type="number" placeholder="Cantidad"></th>
-                <td>Buzzer (Parlante) <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" title="Buzzer (parlante)" data-bs-trigger="focus" data-bs-content="Parlante que emite un sonido de alerta al sobrepasar una velocidad máxima o al poner en marcha el vehiculo sin el identificador Cospel">Descripción</button></td>
-                <td class="valorMensualPrice">$500</td>
-                <td class="valorMensualTotal precioTotal">$0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="centerInput"><input class="valorMensualCant" type="number" placeholder="Cantidad"></th>
-                <td>Identificador de chofer magnetico <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Identificador de chofer" data-bs-content="El identificador de chofer magnetico es instalado en el vehiculo para poder identificar quien es la persona manejando, se utiliza en conjunto con el Buzzer el cual no permite que se maneje el vehiculo sin identifcarse y el Cospel para precisamente, poder identifcarse">Descripción</button></td>
-                <td class="valorMensualPrice">$1000</td>
-                <td class="valorMensualTotal precioTotal">$0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="centerInput"><input class="valorMensualCant" type="number" placeholder="Cantidad"></th>
-                <td>Llave chofer (Cospel) <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" title="Cospel" data-bs-trigger="focus" data-bs-content="El cospel es una llave otorgada al conductor en la cual está cargada la información del mismo para poder identificarlo en nuestra plataforma, trabaja en conjunto con el Identificador de chofer y el Buzzer para impedir que se conduzcan vehiculos por personas no autorizadas.">Descripción</button></td>
-                <td class="valorMensualPrice">$400</td>
-                <td class="valorMensualTotal precioTotal">$0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="centerInput"><input class="valorMensualCant" type="number" placeholder="Cantidad"></th>
-                <td>Apertura puerta exterior <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Apertura puerta exterior" data-bs-content="Especial para camiones con carga, esto les permitirá saber si la puerta de la carga ha sido abierta en algun momento">Descripción</button></td>
-                <td class="valorMensualPrice">$1500</td>
-                <td class="valorMensualTotal precioTotal">$0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="centerInput"><input class="valorMensualCant" type="number" placeholder="Cantidad"></th>
-                <td>Sensor de temperatura <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Sensor de temperatura" data-bs-content="Se utiliza para medir la temperatura ambiente de un acoplado o caja térmica.">Descripción</button></td>
-                <td class="valorMensualPrice">$1500</td>
-                <td class="valorMensualTotal precioTotal">$0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="centerInput"><input class="valorMensualCant" type="number" placeholder="Cantidad"></th>
-                <td>Seguro (reembolsable) <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Seguro" data-bs-content="Seguro por el servicio de comodato de los equipos GPS, este será devuelto al finalizar la relación comercial.">Descripción</button></td>
-                <td class="valorMensualPrice">$5000</td>
-                <td class="valorMensualTotal precioTotal">$0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="centerInput"><input class="valorMensualCant" type="number" placeholder="Cantidad"></th>
-                <td>Botón de pánico <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Botón de pánico" data-bs-content="Botón que instalamos en el vehiculo que permite enviar un aviso SOS a nuestra plataforma o un número de telefono a elección.">Descripción</button> </td>
-                <td class="valorMensualPrice">$450</td>
-                <td class="valorMensualTotal precioTotal">$0</td>
-              </tr>
-              <tr class="table-primary">
-                <th scope="row"></th>
-                <td colspan="2">Total presupuestado mensual <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Total presupuesto mensual" data-bs-content="Este pago es el total a pagar mensualmente. Importante: Debe agregarse el IVA correspondiente.">Descripción</button></td>
-                <td id="pagoMensualId">$0</td>
-              </tr>
-              <tr class="table-primary">
-                <th scope="row"></th>
-                <td colspan="2">Total Instalación (Pago único) <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Pago Único" data-bs-content="Monto que se debe abonar por única vez al momento de realizar la instalación">Descripcion</button></td>
-                <td id="pagoUnicoId">$0</td>
-              </tr>
-            </tbody>
-          </table>
+      <!-- Contact & Map-->
+      <div>
+        <div class="container mt-4">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4"> Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Dirección:</span> Patricios 823, Bahia Blanca, Argentina
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span> administracion@globalgps.com.ar
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Telefono:</span> +5492914253131
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Abcabc:</span> TExt filler idc
+                        </li>                        
+                    </ul>
+                </div>
+                <div class="col-md" style="width: 400px; height: 400px;">
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.8523699683506!2d-62.28526708407262!3d-38.72119829428155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbca327dc63c5%3A0x5a44ca5c24f26649!2sAMI%2C%20Patricios%20823%2C%20B8000%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1634055156205!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
       </div>
-      <div class="container-fluid printButtonDiv">
-        <button type="button" class="btn btn-outline-info" id="printButton">Imprimir</button>
-      </div>
-      <div class="container-fluid printButtonDiv">
-        <button type="button" onclick="printJS('tableToPrint', 'html')">
-          Print Form
-       </button>
-      </div>
+      
 
-
-
+      
 </body>
 </html>

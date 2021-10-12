@@ -48,5 +48,12 @@ input[type='number']{
 }
 
 .btn-primary{
-    font-size: 14px;
+    font-size: 12px;
+    padding: none;
+}
+
+#map{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
