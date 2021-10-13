@@ -3,7 +3,7 @@
 }
 
 .showcase {
-    background: black url(imgs/TRUETRUCK.jpg);
+    background: black url('imgs/TRUETRUCK.jpg');
     padding: 100px;
     margin-top: 10px;
 }
