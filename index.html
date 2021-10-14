@@ -7,6 +7,7 @@
     <script src="print.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e09b5770e3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Presupuestador</title>
@@ -24,6 +25,16 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Sobre Nosotros
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://www.nixel.com.ar/2.0/" target="_blank">¿Quienes Somos?</a></li>
+                  <li><a class="dropdown-item" href="#projects">Nuestros Proyectos</a></li>
+                  <li><a class="dropdown-item" href="#contactSection">Contacto</a></li>
+                </ul>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="presupuesto.html">Presupuesto</a>
               </li>
@@ -35,13 +46,17 @@
         </div>
       </nav>
       <!--Showcase-->
-      <div class="container-fluid showcase">
-        <div class="container showcaseText">
-            <h1 class="fw-bold">Bla BLa BLA </h1>
-            <p>Veseseseseses eseseses es</p>
-        </div>
+      <div class="carouselContainer">
+          <div class="carousel-inner carousel-item active">
+            <img src="imgs/rutabanner.jpg" class="d-block w-100" alt="...">
+             <div class="carousel-caption">
+              <h1 class="display-2"> Global GPS </h1>
+              <h3>Protegé tus vehiculos</h3>
+              <a href="http://gps.nixel.com.ar/index.php?au=44F1D760E2D7C318C736081F27B06CDF" target="_blank_"><button type="button" class="btn btn-outline-light btn-lg">Probar Demo</button></a>
+              <a href="presupuesto.html" target="_blank_"><button type="button" class="btn btn-danger btn-lg">Obtener Presupuesto</button></a>
+             </div>
+          </div>        
       </div>
-
       <!--herosec-->
       <section id='hero'>
         <div class='container'>
@@ -186,8 +201,14 @@
                             <span class="fw-bold">Telefono:</span> +5492914253131
                         </li>
                         <li class="list-group-item">
-                            <span class="fw-bold">What's App:</span> <a target="_blank" href="https://wa.me/+542914253131?text=Hola%20maxi%20chupa%20pija%20!%20test%20!!">What's app</a> 
-                        </li>                        
+                            <span class="fw-bold">What's App:</span> <a target="_blank" href="https://wa.me/+542914253131?text=Hola%20maxi%20chupa%20pija%20!%20test%20!!">Mensaje directo</a> 
+                        </li>
+                        <li class="list-group-item iconsDiv">
+                          <span class="fw-bold">Redes:</span> 
+                          <a href="https://www.facebook.com/NIXELITOK"><i class="fab fa-facebook icon-large"></i></a>
+                          <a href="https://www.instagram.com/nixel_it/"><i class="fab fa-instagram icon-4x"></i></a>
+                          <a href="https://www.nixel.com.ar/"><i class="fas fa-globe"></i></a>
+                      </li>                    
                     </ul>
                 </div>
                 <div class="col-md" style="width: 400px; height: 400px;">
