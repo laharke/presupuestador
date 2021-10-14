@@ -158,3 +158,17 @@ section p {
     font-size: 30px;
     margin-left: 8px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+#whatsapp-widget-timelines {    position: fixed;    bottom: 20px;    height: max-content;    display: flex;    align-items: center;    gap: 2rem;    z-index: 99999999;  }  #whatsapp-widget-timelines .ww-icon {    display: flex;    flex-direction: column;    justify-content: center;    align-items: center;    gap: 5px;  }  #whatsapp-widget-timelines .ww-link {    opacity: 1;    display: block;    position:  absolute;    bottom: -15px;    text-align: center;    white-space: nowrap;    text-decoration: none;    width: 60px;    font-family: Roboto, "Helvetica Neue", sans-serif;    font-size: 11px;    line-height: 11px;    border: 0px;    max-width: inherit;    color: rgb(175, 175, 175) !important;  }  #whatsapp-widget-timelines .ww-link:hover {    border: 0px;    text-decoration: underline !important;    color: rgb(175, 175, 175) !important;  }  #whatsapp-widget-timelines .ww-text {    border-radius: 8px;    border: 1px solid #e2e2e2;    min-height: 56px;    width: 200px;    cursor: pointer;    word-break: break-word;    background: white;    padding: 1rem;    position: relative;    box-shadow: 2px 2px 15px 2px rgb(0 0 0 / 17%);  }  #whatsapp-widget-timelines .ww-text::after {    content: "";    position: absolute;    top: 50%;    width: 20px;    height: 20px;    border-right: 1px solid #e2e2e2;    border-bottom: 1px solid #e2e2e2;    background-color: white;  }  #whatsapp-widget-timelines svg {    fill: rgb(255, 255, 255);    z-index: 1;    border-radius: 50px;    background-color: rgb(77, 194, 71);    box-shadow: rgb(0 0 0 / 40%) 2px 2px 6px;    cursor: pointer;  }  #whatsapp-widget-timelines.ww-right .ww-text::after {    right: -10px;    transform: translateY(-50%) rotate(-45deg);  }  #whatsapp-widget-timelines.ww-left .ww-text::after {    left: -10px;    transform: translateY(-50%) rotate(135deg)  }  #whatsapp-widget-timelines.ww-left {    left: 20px;    flex-direction: row-reverse;  }  #whatsapp-widget-timelines.ww-right {    right: 20px;    flex-direction: row;  }  #whatsapp-widget-timelines.ww-big svg {    height: 75px;    width: 75px;  }  #whatsapp-widget-timelines.ww-medium svg {    height: 65px;    width: 65px;  }  @media(max-width: 768px){    #whatsapp-widget-timelines{      gap:1rem;    }    #whatsapp-widget-timelines svg{      width: 50px!important;      height: 50px!important;    }    #whatsapp-widget-timelines .ww-text{      padding: 0.5rem  1rem;      min-height: 35px;    }  }
