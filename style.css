@@ -219,7 +219,7 @@ section p {
         margin-bottom: 100%;
     }
     .mapaClase{
-        margin-left: 5px;
+        margin-left: 70px;
     }
     /* MAKING THE PRESUPUTADOR RESPONSIVE*/
       
@@ -227,7 +227,30 @@ section p {
 
     /*making logo bigger, works just fine */
     .imgLogo{
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
+        margin-left: 45px;
+    }
+}
+/* MAKING THE PRESUPUTADOR RESPONSIVE*/
+@media screen and (max-width: 1280px) {
+    #tableToPrint {
+      display: block;
+      overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #tableToPrint {
+      display: block;
+      overflow-x: auto;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    #tableToPrint {
+      display: block;
+      overflow-x: auto;
     }
 }
