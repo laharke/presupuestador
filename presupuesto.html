@@ -44,6 +44,27 @@
         </div>
       </div>
     </nav>
+    <!-- input para cliente -->
+    
+    <section class="container" id="inputInfoContainer">
+      <h3>Datos del cliente:</h3>
+      <div class="input-group infoCliente">
+        <span class="input-group-text">Nombre y Apellido:</span>
+        <input type="text" aria-label="First name" class="form-control inputCliente">
+      </div>
+      <div class="input-group infoCliente">
+        <span class="input-group-text">Empresa:</span>
+        <input type="text" aria-label="First name" class="form-control inputCliente">
+      </div>
+      <div class="input-group infoCliente">
+        <span class="input-group-text">Email:</span>
+        <input type="text" aria-label="First name" class="form-control inputCliente">
+      </div>
+      <div class="input-group infoCliente">
+        <span class="input-group-text">Telefono:</span>
+        <input type="text" aria-label="First name" class="form-control inputCliente">
+      </div>   
+    </section>
 
       <!--Actual presupuestador-->
       <div  class="container-fluid tableContainer">
@@ -119,12 +140,6 @@
               </tr>
               <tr>
                 <th scope="row" class="centerInput"><input class="valorMensualCant" type="number" placeholder="Cantidad"></th>
-                <td><div style="display: flex; justify-content: space-between;">Seguro (reembolsable) <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Seguro" data-bs-content="Seguro por el servicio de comodato de los equipos GPS, este será devuelto al finalizar la relación comercial.">Descripción</button></div></td>
-                <td class="valorMensualPrice">$5000</td>
-                <td class="valorMensualTotal precioTotal">$0</td>
-              </tr>
-              <tr>
-                <th scope="row" class="centerInput"><input class="valorMensualCant" type="number" placeholder="Cantidad"></th>
                 <td><div style="display: flex; justify-content: space-between;">Botón de pánico <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="popover" data-bs-trigger="focus" title="Botón de pánico" data-bs-content="Botón que instalamos en el vehiculo que permite enviar un aviso SOS a nuestra plataforma o un número de telefono a elección.">Descripción</button></div> </td>
                 <td class="valorMensualPrice">$450</td>
                 <td class="valorMensualTotal precioTotal">$0</td>
@@ -149,6 +164,9 @@
         <button type="button" onclick="printJS('tableToPrint', 'html')">
           Print Form
        </button>
+      </div>
+      <div>
+        <button type="button" id="buttonToPrint"> PDF</button>
       </div>
 
 

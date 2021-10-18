@@ -63,7 +63,7 @@ const cantidadRefs = document.querySelectorAll(".valorMensualCant");
 const priceRefs = document.querySelectorAll(".valorMensualPrice");
 const priceTotal = document.querySelectorAll(".valorMensualTotal");
 
-for (let i = 0; i < 7; i++){
+for (let i = 0; i < 6; i++){
     
     cantidadRefs[i].addEventListener('input', () => {
         let cantidad = cantidadRefs[i].value;
@@ -90,7 +90,7 @@ printButtonRef.addEventListener('click', () => {
 const nodeListTotal = document.querySelectorAll(".precioTotal");
 const totalPagoUnicoRef = document.querySelector("#pagoUnicoId")
 
-for (let i = 0; i < 7; i++){
+for (let i = 0; i < 6; i++){
     let pagoUnico = 0;
     cantidadRefs[i].addEventListener('input', () => {
         let precioSumar1 = Number(nodeListTotal[0].innerHTML.substring(1));
@@ -99,8 +99,7 @@ for (let i = 0; i < 7; i++){
         let precioSumar4 = Number(nodeListTotal[3].innerHTML.substring(1));        
         let precioSumar5 = Number(nodeListTotal[4].innerHTML.substring(1));        
         let precioSumar6 = Number(nodeListTotal[5].innerHTML.substring(1));
-        let precioSumar7 = Number(nodeListTotal[6].innerHTML.substring(1));
-        pagoUnico = precioSumar1 + precioSumar2 + precioSumar3 + precioSumar4 + precioSumar5 +precioSumar6 + precioSumar7;
+        pagoUnico = precioSumar1 + precioSumar2 + precioSumar3 + precioSumar4 + precioSumar5 +precioSumar6;
         console.log(pagoUnico)
         totalPagoUnicoRef.innerHTML = "$" + pagoUnico;
         
@@ -141,6 +140,8 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 });
 
 
+
+//BOTON DE SCROLL PAR AARRIBA IGUAL ESTO ES CHOTO
 //Get the button
 let myButton2 = document.getElementById("myBtn");
 
@@ -161,3 +162,21 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+// SAVE PDF
+var doc = new jsPDF();
+var elementHTML = $('#buttonToPrint').html();
+var specialElementHandlers = {
+    '#elementH': function (element, renderer) {
+        return true;
+    }
+};
+doc.fromHTML(elementHTML, 15, 15, {
+    'width': 170,
+    'elementHandlers': specialElementHandlers
+});
+
+// Save the PDF
+doc.save('sample-document.pdf');

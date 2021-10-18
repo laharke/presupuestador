@@ -184,7 +184,25 @@ section p {
     background-color: #555; /* Add a dark-grey background on hover */
   }
 
-
+  table{
+    border: 1px solid black;
+  }
+.clienteInfo{
+    display: flex;
+}
+.clienteContainer{
+    display: flex;
+    justify-content: center;
+}
+.inputCliente{
+    width: 200px;
+}
+.infoCliente{
+    margin-top: 5px;
+}
+#inputInfoContainer{
+    width: 600px;
+}
 
 
 
@@ -219,7 +237,7 @@ section p {
         margin-bottom: 100%;
     }
     .mapaClase{
-        margin-left: 70px;
+        margin-left: 10px;
     }
     /* MAKING THE PRESUPUTADOR RESPONSIVE*/
       
@@ -229,7 +247,7 @@ section p {
     .imgLogo{
         width: 80%;
         height: 80%;
-        margin-left: 45px;
+        margin-left: 5px;
     }
 }
 /* MAKING THE PRESUPUTADOR RESPONSIVE*/
