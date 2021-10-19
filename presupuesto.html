@@ -45,9 +45,9 @@
       </div>
     </nav>
     <!-- input para cliente -->
-    
+    <div id="toPrintFull">
     <section class="container" id="inputInfoContainer">
-      <h3>Datos del cliente:</h3>
+      <h3 id="datosFont">Datos del cliente:</h3>
       <div class="input-group infoCliente">
         <span class="input-group-text">Nombre y Apellido:</span>
         <input type="text" aria-label="First name" class="form-control inputCliente">
@@ -67,6 +67,7 @@
     </section>
 
       <!--Actual presupuestador-->
+      <h3 id="datosFont">Presupuesto:</h3>
       <div  class="container-fluid tableContainer">
         <table id="tableToPrint" class="table table-bordered">
             <thead>
@@ -157,16 +158,18 @@
             </tbody>
           </table>
       </div>
+    </div>
       <div class="container-fluid printButtonDiv">
         <button type="button" class="btn btn-outline-info" id="printButton">Imprimir</button>
       </div>
       <div class="container-fluid printButtonDiv">
-        <button type="button" onclick="printJS('tableToPrint', 'html')">
+        <button type="button" onclick="printJS('toPrintFull', 'html')">
           Print Form
        </button>
+       
       </div>
       <div>
-        <button type="button" id="buttonToPrint"> PDF</button>
+        <button type="button" id="buttonToPrint" onclick="savePDF()"> PDF</button>
       </div>
 
 
